@@ -106721,6 +106721,8 @@ typedef u64 (*btf_bpf_xdp_redirect)(u32, u64);
 
 typedef u64 (*btf_bpf_xdp_redirect_map)(struct bpf_map *, u64, u64);
 
+typedef u64 (*btf_bpf_xdp_copy_tail_call)(struct bpf_map *, u64);
+
 typedef u64 (*btf_bpf_xdp_sk_lookup_tcp)(struct xdp_buff *, struct bpf_sock_tuple *, u32, u32, u64);
 
 typedef u64 (*btf_bpf_xdp_sk_lookup_udp)(struct xdp_buff *, struct bpf_sock_tuple *, u32, u32, u64);

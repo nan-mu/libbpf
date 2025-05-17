@@ -4776,4 +4776,6 @@ static void *(* const bpf_cgrp_storage_get)(void *map, struct cgroup *cgroup, vo
  */
 static long (* const bpf_cgrp_storage_delete)(void *map, struct cgroup *cgroup) = (void *) 211;
 
+// 我的
+static long (* const bpf_xdp_copy_tail_call)(void *map, __u64 key) = (void *) 212;
 
